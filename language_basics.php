@@ -61,18 +61,26 @@
 // 6.LOOPS
     // forloop()
     for ($i=0; $i < 5; $i++) {
-        echo "This is loop number $i <br>";
+        echo "This is loop forloop running number $i <br>";
     }
-    // The while loop
-    $i=0; // initialization
-    while ($i < 5) {
+    // // The while loop
+    $j=2; // initialization     
+    while ($j < 5) {
         echo "This is in while loop under loop number $i <br>" ;
+            $j++;
     }
-
     // The do. . . while loop
     $i = 0; // initialization
     do {
         $i++; // step
         echo "This is loop number $i <br>";
     }while ($i < 5); // condition
+    
+    // the foreach loop
+    $arrayName = array('a','b','c','d','e','f','g','h','i','j');
+    foreach ($variable as $key) {
+        echo "Element is $key";
+    }
+
+
 ?>
