@@ -52,24 +52,31 @@
     echo "<br>Case-Insensitive Comparison Result: $result";
     // string sensitive 
     $string1 = "apple";
-$string2 = "banana"; 
-$result = strcmp($string1, $string2);
-echo "<br>Comparison Result: $result";
-echo "String shuffling <br>";
-$text = "Hello, World!";
-$shuffled = str_shuffle($text);
-echo "<br>Shuffled: $shuffled";
+    $string2 = "banana"; 
+    $result = strcmp($string1, $string2);
+    echo "<br>Comparison Result: $result";
+    echo "String shuffling <br>";
+    $text = "Hello, World!";
+    $shuffled = str_shuffle($text);
+    echo "<br>Shuffled: $shuffled";
 
-// Wordwrap: wordwrap()
-echo "<br>Wordwrap: wordwrap()<br>";
-$text = "This is a long sentence that should be wrapped.";
-$wrapped = wordwrap($text, 15, "<br>");
-echo "Wrapped:<br>$wrapped";
-// Explode Function: explode()
-echo "<br>Explode Function: explode() ..explode function splits a string into an array by a specified delimiter.<br>";
-$text = "apple,banana,orange";
-$fruits = explode(",", $text);
-print_r($fruits);
+    // Wordwrap: wordwrap()
+    echo "<br>Wordwrap: wordwrap()<br>";
+    $text = "This is a long sentence that should be wrapped.";
+    $wrapped = wordwrap($text, 15, "<br>");
+    echo "Wrapped:<br>$wrapped";
+    // Explode Function: explode()
+    echo "<br>Explode Function: explode() ..explode function splits a string into an array by a specified delimiter.<br>";
+    $text = "apple,banana,orange";
+    $fruits = explode(",", $text);
+    print_r($fruits);
+    echo "<br>";
+    foreach ($fruits as $i) {
+        echo $i;
+        echo "<br>";
+    }
+    // Implode
+    echo implode("  ",$fruits);
 
 
 
