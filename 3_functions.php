@@ -84,4 +84,6 @@ echo "ONDITIONAL FUNCTIONS <br>";
     }
     recursion(1);
 
+    // phpinfo();--Prints php details
+    print($_ENV);
 ?>
