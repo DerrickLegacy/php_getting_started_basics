@@ -1,6 +1,6 @@
 <?php
     $x = 2453;
-    $doubleVariable ="Double quoted string variable with $x  \\n ew <br>";
+    $doubleVariable ="Double quoted string will print variable with $x  \n ew <br>";
     $singleVariable ='Single quoted string variable with $x value not printed <br> ';
     print($doubleVariable);
     print($singleVariable);
