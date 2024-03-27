@@ -14,12 +14,12 @@ session_start();
 </head>
 
 <body>
-    <form action="session.php" method="post">
+    <form action="session_handler.php" method="post">
         <h1>Start Session</h1>
         <?php
             $_SESSION["favanimal"] = "cat";
             $_SESSION["am_inside_page"] = "am_located_inside_html_page";
-            echo "Session variables are set.";
+            echo "This form's session variables have been set. <br>";
 
         //
         ?>

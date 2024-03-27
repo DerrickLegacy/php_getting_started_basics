@@ -15,4 +15,4 @@ session_unset(); //clears all session variable
 unset($_SESSION["country"]); //clears a specific variable
 
 // destroy the session
-session_destroy(); 
+session_destroy();

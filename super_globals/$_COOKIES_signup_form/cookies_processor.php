@@ -1,8 +1,4 @@
 <?php
-// Set a cookie with a fixed name
-  $cookieName = "our_pagessssss";
-  $cookieValue = $_POST["name"]; // Using name as value, but you may want to change this
-  setcookie($cookieName, $cookieValue, time() + (60*60*24*30*2), "/");
 
 // Check if the cookie is set
 if (!isset($_COOKIE[$cookieName])) {

@@ -1,4 +1,9 @@
-
+<?php
+// Set a cookie with a fixed name
+  $cookieName = "sign_up_form_cookie";
+  $cookieValue = $_POST["name"]; // Using name as value, but you may want to change this
+  setcookie($cookieName, $cookieValue, time() + (60*60*24*30), "/");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
